@@ -1,39 +1,44 @@
 # Enterprise-Power-BI-Finance-Analytics.
-# Project: Global Export Resilience
-**Enterprise BI Implementation: Financial Crisis and Policy Impact Analysis**
+# Banking Crisis and Global Export Resilience
+**Enterprise BI Project | World Bank Data Analysis**
 
-## 1. Project Overview
-This project analyzes the relationship between international trade and macro-financial stability. It utilizes global industry-level trade data and banking crisis indicators to visualize how financial shocks affect sectors based on credit reliance and asset structures.
-
-## 2. Problem Statement
-Banking crises disrupt trade flows through liquidity constraints. Impact varies by **Financial Dependence (RZ)** and **Asset Tangibility (TANG)**. This project evaluates the efficacy of government interventions (liquidity support, debt relief) in stabilizing trade performance.
-
-## 3. Business Questions
-* **Crisis Impact:** Quantify the drop in `expgrowth` during banking crises.
-* **Sectoral Vulnerability:** Compare losses between high `RZ` and high `TANG` industries.
-* **Policy Effectiveness:** Identify which intervention (`liqsup`, `recaps`, `debtrelief`) yields the fastest recovery.
-* **Systemic Interaction:** Assess how `pcrdbofgdp` influences export declines during recessions.
-* **Global Sensitivity:** Compare `tradeshare` impact of foreign recessions on developed vs. developing nations.
-
-## 4. Technical Architecture
-* **ETL:** 10+ Power Query transformations (normalization, null handling, ISO standardization).
-* **Modeling:** Star Schema optimization for DAX performance.
-* **DAX:** 15+ measures (Time Intelligence, Recovery Velocity Indexes).
-* **Visuals:** Decomposition Trees, Map Plots, and What-If parameters.
-
-## 5. Data Model (Star Schema)
-
-* **Fact Table:** `Fact_TradePerformance` (tradevalue, expgrowth, loss)
-* **Dim_Geography:** exporter, developed, developing
-* **Dim_Industry:** product, durables, RZ, TANG, herf
-* **Dim_CrisisPolicy:** year, BANK, TWIN, recession, liqsup, recaps
-
-## 6. GROUP MEMBERS 
+## 1. Group Members 
 * **Angela Irungu** 
-* **Martin Kyaremateng** 
+* **Martin Kyaremateng**
 * **Queen Kibegi** 
 * **Tumaini Muriithi** 
-* **Leona Kamau** 
-* **Lesala Monaheng** 
+* **Leona Kamau**
+* **Lesala Monaheng**
+---
 
+## 2. Project Overview
+This project investigates the impact of systemic banking and currency crises on global export performance. By analyzing industry-level trade data, we identify which sectors are most vulnerable based on their financial structures and evaluate the effectiveness of government policy interventions.
 
+## 3. Problem Statement
+Financial crises restrict credit, but the impact is not uniform across all industries. This project analyzes how **External Financial Dependence (RZ)** and **Asset Tangibility (TANG)** determine an industry's resilience or failure during a banking crisis.
+
+## 4. Business Questions
+* **Crisis Impact:** What is the average drop in export growth (`expgrowth`) during a systemic banking crisis?
+* **Structural Vulnerability:** Do high-RZ industries suffer more significant losses than high-TANG industries?
+* **Policy Efficacy:** Which intervention (Liquidity Support vs. Recapitalization) correlates with faster trade recovery?
+* **Systemic Interaction:** How does a country's private credit levels (`pcrdbofgdp`) influence export declines?
+* **Global Contagion:** How do recessions in major partner countries (`RecessionAbroad`) impact local trade shares?
+
+## 5. Data Source
+* **Official Source:** [World Bank Data Catalog: Banking Crisis and Exports](https://datacatalog.worldbank.org/search/dataset/0041188/banking-crisis-and-exports-dataset)
+* **Dataset Size:** 8,000+ observations covering global trade and crisis indicators.
+
+## 6. Technical Architecture
+* **ETL:** Data cleaning, normalization, and ISO standardization using Power Query.
+* **Modeling:** Star Schema optimization (1 Fact Table, 5 Dimension Tables).
+* **DAX:** Implementation of Time Intelligence and Crisis Window metrics.
+* **Visualization:** Power BI Interactive Dashboards.
+
+## 7. The Data Model (Star Schema)
+The project utilizes a **Star Schema** to ensure analytical precision and avoid Many-to-Many relationship conflicts:
+* **Fact_TradePerformance:** Centralized trade metrics and growth rates.
+* **Dim_Geography:** Country-specific economic indicators and development status.
+* **Dim_Industry:** Sector-specific financial ratios (RZ, TANG, HERF).
+* **Dim_CrisisPolicy:** Yearly crisis markers and government response data.
+* **Dim_ForeignConditions:** External global economic factors and partner recessions.
+* **Dim_CrisisWindow:** Specialized country-year crisis event tracking using a composite key.
