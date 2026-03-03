@@ -28,7 +28,7 @@ Banking crises disrupt trade flows through liquidity constraints. Impact varies 
 * **Dim_Industry:** product, durables, RZ, TANG, herf
 * **Dim_CrisisPolicy:** year, BANK, TWIN, recession, liqsup, recaps
 
-## 7. GROUP MEMBERS 
+## 6. GROUP MEMBERS 
 * **Angela Irungu** 
 * **Martin Kyaremateng** 
 * **Queen Kibegi** 
