@@ -9,7 +9,7 @@
 * **Tumaini Micheni** 
 * **Leona Kamau**
 * **Lesala Monaheng**
----
+
 
 ## 2. Project Overview
 This project investigates the impact of systemic banking and currency crises on global export performance. By analyzing industry-level trade data, we identify which sectors are most vulnerable based on their financial structures and evaluate the effectiveness of government policy interventions.
