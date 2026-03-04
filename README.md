@@ -30,7 +30,7 @@ Financial crises restrict credit, but the impact is not uniform across all indus
 
 ## 6. Technical Architecture
 * **ETL:** Data cleaning, normalization, and ISO standardization using Power Query.
-* **Modeling:** Star Schema optimization (1 Fact Table, 5 Dimension Tables).
+* **Modeling:** Star Schema optimization (1 Fact Table, 3 Dimension Tables).
 * **DAX:** Implementation of Time Intelligence and Crisis Window metrics.
 * **Visualization:** Power BI Interactive Dashboards.
 
