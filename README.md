@@ -35,10 +35,16 @@ Financial crises restrict credit, but the impact is not uniform across all indus
 * **Visualization:** Power BI Interactive Dashboards.
 
 ## 7. The Data Model (Star Schema)
-The project utilizes a **Star Schema** to ensure analytical precision and avoid Many-to-Many relationship conflicts:
-* **Fact_TradePerformance:** Centralized trade metrics and growth rates.
-* **Dim_Geography:** Country-specific economic indicators and development status.
-* **Dim_Industry:** Sector-specific financial ratios (RZ, TANG, HERF).
-* **Dim_CrisisPolicy:** Yearly crisis markers and government response data.
-* **Dim_ForeignConditions:** External global economic factors and partner recessions.
-* **Dim_CrisisWindow:** Specialized country-year crisis event tracking using a composite key.
+
+The project utilizes a Star Schema to ensure analytical precision, improve DAX performance, and avoid Many-to-Many relationship conflicts.
+
+**Fact_TradePerformance:** Centralized trade performance metrics and macroeconomic indicators at the exporter–year level of granularity.
+
+**Dim_Date:** Time dimension containing calendar attributes used to support trend analysis and time intelligence calculations.
+
+**Dim_Country:** Country-specific economic indicators and development classification used for segmentation and cross-country comparison.
+
+**Dim_CrisisStatus:** Crisis classification dimension capturing systemic banking crises, twin crises, recession indicators, and foreign recession conditions for structured disruption analysis.
+
+The model follows strict Star Schema principles with one central fact table connected to three dimension tables through one-to-many, single-direction relationships.
+
