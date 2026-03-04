@@ -6,7 +6,7 @@
 * **Angela Irungu** 
 * **Martin Kyaremateng**
 * **Queen Kibegi** 
-* **Tumaini Muriithi** 
+* **Tumaini Micheni** 
 * **Leona Kamau**
 * **Lesala Monaheng**
 ---
