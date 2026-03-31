@@ -5,7 +5,7 @@
 ## 1. Group Members 
 * **Angela Irungu** 
 * **Martin Kyaremateng**: Created 18 DAX measures.
-* **Queen Kibegi** 
+* **Queen Kibegi** : Data Cleaning
 * **Tumaini Micheni** 
 * **Leona Kamau**
 * **Lesala Monaheng**
