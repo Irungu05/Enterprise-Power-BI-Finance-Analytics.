@@ -154,26 +154,26 @@ KPI	Definition	Formula Reference
 Below is the full list of measures created for this project with screenshots of formulas.
 
 #	Measure Name	Description
-| Measure | Description | Screenshot |
-|---------|-------------|------------|
-| `Avg Export Growth Normal` | Average annual export growth during years with no banking crisis | *(Insert screenshot)* |
-| `Avg Export Growth Crisis` | Average annual export growth during years with a systemic banking crisis | *(Insert screenshot)* |
-| `Crisis Impact` | Absolute difference in export growth between crisis and normal periods | *(Insert screenshot)* |
-| `Avg Loss High RZ` | Average output loss for industries with financial dependence (RZ) above median | *(Insert screenshot)* |
-| `Avg Loss Low RZ` | Average output loss for industries with financial dependence (RZ) ≤ median | *(Insert screenshot)* |
-| `Recovery Velocity` | Percentage increase in trade value from crisis trough to three years later | *(Insert screenshot)* |
-| `Avg Export Growth w Liquip` | Average export growth during crises where liquidity support was provided | *(Insert screenshot)* |
-| `Avg Export Growth w DebtRelief` | Average export growth during crises where debt relief was implemented | *(Insert screenshot)* |
-| `Avg Export Growth w Recaps` | Average export growth during crises where bank recapitalization occurred | *(Insert screenshot)* |
-| `Export Decline High PcrDb` | Export growth drop during crises for countries with private credit/GDP above median | *(Insert screenshot)* |
-| `Export Decline Low PcrDb` | Export growth drop during crises for countries with private credit/GDP ≤ median | *(Insert screenshot)* |
-| `TradeShare Change Dev Recession` | Change in export share for developed countries when major trading partners are in recession | *(Insert screenshot)* |
-| `TradeShare Change Devl Recession` | Change in export share for developing countries when major trading partners are in recession | *(Insert screenshot)* |
-| `YoY Export Growth` | Year‑over‑year change in total trade value (with error handling) | *(Insert screenshot)* |
-| `Avg Trimmed Export Growth` | Average of the outlier‑adjusted export growth variable | *(Insert screenshot)* |
-| `Total Trade Value` | Sum of trade value (base measure) | *(Insert screenshot)* |
-| `Policy Intervention Count` | Count of years where any policy response (liquidity support, debt relief, or recapitalization) was active | *(Insert screenshot)* |
-| `High RZ Flag` | Dynamic flag: 1 if industry’s financial dependence (RZ) is above median, else 0 | *(Insert screenshot)* |
+| Measure | Description | 
+|---------|-------------|
+| `Avg Export Growth Normal` | Average annual export growth during years with no banking crisis | 
+| `Avg Export Growth Crisis` | Average annual export growth during years with a systemic banking crisis | 
+| `Crisis Impact` | Absolute difference in export growth between crisis and normal periods | 
+| `Avg Loss High RZ` | Average output loss for industries with financial dependence (RZ) above median | 
+| `Avg Loss Low RZ` | Average output loss for industries with financial dependence (RZ) ≤ median | 
+| `Recovery Velocity` | Percentage increase in trade value from crisis trough to three years later | 
+| `Avg Export Growth w Liquip` | Average export growth during crises where liquidity support was provided | 
+| `Avg Export Growth w DebtRelief` | Average export growth during crises where debt relief was implemented | 
+| `Avg Export Growth w Recaps` | Average export growth during crises where bank recapitalization occurred | 
+| `Export Decline High PcrDb` | Export growth drop during crises for countries with private credit/GDP above median |
+| `Export Decline Low PcrDb` | Export growth drop during crises for countries with private credit/GDP ≤ median | 
+| `TradeShare Change Dev Recession` | Change in export share for developed countries when major trading partners are in recession | 
+| `TradeShare Change Devl Recession` | Change in export share for developing countries when major trading partners are in recession | 
+| `YoY Export Growth` | Year‑over‑year change in total trade value (with error handling) | 
+| `Avg Trimmed Export Growth` | Average of the outlier‑adjusted export growth variable | 
+| `Total Trade Value` | Sum of trade value (base measure) | 
+| `Policy Intervention Count` | Count of years where any policy response (liquidity support, debt relief, or recapitalization) was active |
+| `High RZ Flag` | Dynamic flag: 1 if industry’s financial dependence (RZ) is above median, else 0 |
 
 > [!Note]
 > Measures 4–5 (Avg Loss High/Low RZ) rely on the loss column, which may contain estimated values. For robustness, consider using loss2 as an alternative where available.
