@@ -145,10 +145,10 @@ KPI	Definition	Formula Reference
 
 ## Justification for Advanced Measures
 ### Measure	Justification
-- Recovery Velocity	Enables cross‑country comparisons of recovery speed, directly tied to policy evaluation.
-- YoY Export Growth (Error‑Handled)	Ensures dashboard stability and accuracy, especially in sparse datasets.
-- Crisis Impact	Provides a high‑level, actionable insight for executives and policymakers.
-- High RZ Flag	Makes industry‑level vulnerability analysis intuitive and dynamic.
+> - Recovery Velocity	Enables cross‑country comparisons of recovery speed, directly tied to policy evaluation.
+> - YoY Export Growth (Error‑Handled)	Ensures dashboard stability and accuracy, especially in sparse datasets.
+> - Crisis Impact	Provides a high‑level, actionable insight for executives and policymakers.
+> - High RZ Flag	Makes industry‑level vulnerability analysis intuitive and dynamic.
 
 ### Complete List of Measures
 Below is the full list of measures created for this project with screenshots of formulas.
