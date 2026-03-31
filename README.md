@@ -32,6 +32,22 @@ Financial crises restrict credit, but the impact is not uniform across all indus
 * **ETL:** Data cleaning, normalization, and ISO standardization using Power Query.
 * **Modeling:** Star Schema optimization (1 Fact Table, 3 Dimension Tables).
 * **DAX:** Implementation of Time Intelligence and Crisis Window metrics.
+  > 📁 Measures Documentation in Repository
+  > All DAX measures are stored in the project repository under /DAX_Measures/ with a markdown file containing:
+```
+- Measure name and description
+
+- Full DAX formula and Screenshots
+
+- Dependencies (tables/columns used)
+
+- Business question addressed through the measures
+
+- KPIs
+
+- Justification for advanced measures
+```
+
 * **Visualization:** Power BI Interactive Dashboards.
 
 ## 7. The Data Model (Star Schema)
