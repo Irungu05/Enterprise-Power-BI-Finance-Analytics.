@@ -37,7 +37,7 @@ Financial crises restrict credit, but the impact is not uniform across all indus
 ```
 - Measure name and description
 
-- Full DAX formula and Screenshots
+- Full DAX formula 
 
 - Dependencies (tables/columns used)
 
