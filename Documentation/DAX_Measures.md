@@ -5,6 +5,9 @@
 ![Status](https://img.shields.io/badge/Project-Active-success)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
+> By:
+> Kyeremateng Martin
+
 # DAX Development Documentation
 
 ## Overview
