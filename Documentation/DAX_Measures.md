@@ -131,61 +131,49 @@ High RZ Flag = IF(SELECTEDVALUE(Fact_TradePerformance[RZ]) > MEDIAN(Fact_TradePe
 > [!Warning]
 > This measure uses SELECTEDVALUE, which returns a value only if a single industry is selected. If multiple industries are selected, it will return blank. Use this measure in visuals where the industry granularity is at the appropriate level (e.g., scatter plots with one point per industry).
 
-📁 Measures Documentation in Repository
-All DAX measures are stored in the project repository under /DAX_Measures/ with a markdown file containing:
-
-Measure name and description
-
-Full DAX formula
-
-Dependencies (tables/columns used)
-
-Business question addressed
-
-This ensures transparency, version control, and easy handover.
-
-Note
-The repository also includes a Power BI template (.pbit) that pre‑populates the measures table, so you can start building visuals immediately.
-
-📊 KPI Definitions Explained
+📊 KPIs
 KPI	Definition	Formula Reference
-Export Growth (Normal)	Avg annual export growth during years with no banking crisis	Avg Export Growth Normal
-Export Growth (Crisis)	Avg annual export growth during years with a banking crisis	Avg Export Growth Crisis
-Crisis Impact	Absolute difference in export growth between crisis and normal	Crisis Impact
-Recovery Velocity	% increase in trade value from crisis trough to 3 years later	Recovery Velocity
-YoY Export Growth	Year‑over‑year change in total trade value	YoY Export Growth
-Policy Effectiveness Score	Avg export growth during crisis when a specific policy was active	Avg Export Growth w [Policy]
-Important
-Policy effectiveness scores should be interpreted cautiously—correlation does not imply causation. Other confounding factors (e.g., crisis severity, global economic conditions) may influence results.
+- Export Growth (Normal):	Avg annual export growth during years with no banking crisis	```Avg Export Growth Normal```
+- Export Growth (Crisis):	Avg annual export growth during years with a banking crisis	```Avg Export Growth Crisis```
+- Crisis Impact:	Absolute difference in export growth between crisis and normal	```Crisis Impact```
+- Recovery Velocity:	% increase in trade value from crisis trough to 3 years later	```Recovery Velocity```
+- YoY Export Growth:	Year‑over‑year change in total trade value	```YoY Export Growth```
+- Policy Effectiveness Score:	Avg export growth during crisis when a specific policy was active	```Avg Export Growth w [Policy]```
 
-🧠 Justification for Advanced Measures
-Measure	Justification
-Recovery Velocity	Enables cross‑country comparisons of recovery speed, directly tied to policy evaluation.
-YoY Export Growth (Error‑Handled)	Ensures dashboard stability and accuracy, especially in sparse datasets.
-Crisis Impact	Provides a high‑level, actionable insight for executives and policymakers.
-High RZ Flag	Makes industry‑level vulnerability analysis intuitive and dynamic.
-📋 Complete List of Measures
-Below is the full list of measures created for this project. Detailed formulas are maintained in the repository.
+> [!Important]
+> Policy effectiveness scores should be interpreted cautiously—correlation does not imply causation. Other confounding factors (e.g., crisis severity, global economic conditions) may influence results.
+
+## Justification for Advanced Measures
+### Measure	Justification
+- Recovery Velocity	Enables cross‑country comparisons of recovery speed, directly tied to policy evaluation.
+- YoY Export Growth (Error‑Handled)	Ensures dashboard stability and accuracy, especially in sparse datasets.
+- Crisis Impact	Provides a high‑level, actionable insight for executives and policymakers.
+- High RZ Flag	Makes industry‑level vulnerability analysis intuitive and dynamic.
+
+### Complete List of Measures
+Below is the full list of measures created for this project with screenshots of formulas.
 
 #	Measure Name	Description
-1	Avg Export Growth Normal	Average export growth in non‑crisis years
-2	Avg Export Growth Crisis	Average export growth in crisis years
-3	Crisis Impact	Difference between crisis and normal growth
-4	Avg Loss High RZ	Average output loss for industries with RZ > median
-5	Avg Loss Low RZ	Average output loss for industries with RZ ≤ median
-6	Recovery Velocity	Trade value recovery speed after crisis
-7	Avg Export Growth w Liquip	Export growth during crises with liquidity support
-8	Avg Export Growth w DebtRelief	Export growth during crises with debt relief
-9	Avg Export Growth w Recaps	Export growth during crises with recapitalization
-10	Export Decline High PcrDb	Export growth drop in high‑banking‑depth countries
-11	Export Decline Low PcrDb	Export growth drop in low‑banking‑depth countries
-12	TradeShare Change Dev Recession	Trade share change for developed countries during foreign recession
-13	TradeShare Change Devl Recession	Trade share change for developing countries during foreign recession
-14	YoY Export Growth	Year‑over‑year change in total trade value
-15	Avg Trimmed Export Growth	Average of outlier‑adjusted export growth
-16	Total Trade Value	Sum of trade value
-17	Policy Intervention Count	Count of years with any active policy response
-18	High RZ Flag	Indicator for industries with high financial dependence
+| Measure | Description | Screenshot |
+|---------|-------------|------------|
+| `Avg Export Growth Normal` | Average annual export growth during years with no banking crisis | *(Insert screenshot)* |
+| `Avg Export Growth Crisis` | Average annual export growth during years with a systemic banking crisis | *(Insert screenshot)* |
+| `Crisis Impact` | Absolute difference in export growth between crisis and normal periods | *(Insert screenshot)* |
+| `Avg Loss High RZ` | Average output loss for industries with financial dependence (RZ) above median | *(Insert screenshot)* |
+| `Avg Loss Low RZ` | Average output loss for industries with financial dependence (RZ) ≤ median | *(Insert screenshot)* |
+| `Recovery Velocity` | Percentage increase in trade value from crisis trough to three years later | *(Insert screenshot)* |
+| `Avg Export Growth w Liquip` | Average export growth during crises where liquidity support was provided | *(Insert screenshot)* |
+| `Avg Export Growth w DebtRelief` | Average export growth during crises where debt relief was implemented | *(Insert screenshot)* |
+| `Avg Export Growth w Recaps` | Average export growth during crises where bank recapitalization occurred | *(Insert screenshot)* |
+| `Export Decline High PcrDb` | Export growth drop during crises for countries with private credit/GDP above median | *(Insert screenshot)* |
+| `Export Decline Low PcrDb` | Export growth drop during crises for countries with private credit/GDP ≤ median | *(Insert screenshot)* |
+| `TradeShare Change Dev Recession` | Change in export share for developed countries when major trading partners are in recession | *(Insert screenshot)* |
+| `TradeShare Change Devl Recession` | Change in export share for developing countries when major trading partners are in recession | *(Insert screenshot)* |
+| `YoY Export Growth` | Year‑over‑year change in total trade value (with error handling) | *(Insert screenshot)* |
+| `Avg Trimmed Export Growth` | Average of the outlier‑adjusted export growth variable | *(Insert screenshot)* |
+| `Total Trade Value` | Sum of trade value (base measure) | *(Insert screenshot)* |
+| `Policy Intervention Count` | Count of years where any policy response (liquidity support, debt relief, or recapitalization) was active | *(Insert screenshot)* |
+| `High RZ Flag` | Dynamic flag: 1 if industry’s financial dependence (RZ) is above median, else 0 | *(Insert screenshot)* |
 
 > [!Note]
 > Measures 4–5 (Avg Loss High/Low RZ) rely on the loss column, which may contain estimated values. For robustness, consider using loss2 as an alternative where available.
@@ -193,8 +181,8 @@ Below is the full list of measures created for this project. Detailed formulas a
 > [!Warning]
 Measures using MEDIAN (e.g., Avg Loss High RZ, Export Decline High PcrDb) compute the median across all rows in the current filter context. If you want a fixed global median, consider storing the median value in a separate table or using CALCULATE with ALL to ignore filters.
 
-> [!Notes]
->Tables: Fact_TradePerformance (fact), Dim_Date, Dim_Country, Dim_CrisisStatus (dimensions).
+> [!Note]
+> Tables: Fact_TradePerformance (fact), Dim_Date, Dim_Country, Dim_CrisisStatus (dimensions).
 >
 > Relationships: Active relationships exist between fact and dimension tables as per the star schema.
 >
