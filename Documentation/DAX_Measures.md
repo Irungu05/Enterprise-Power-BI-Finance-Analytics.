@@ -21,7 +21,7 @@ This document provides comprehensive documentation for all DAX measures develope
 Quantifies the speed of trade value recovery after a banking crisis, expressed as the percentage increase from the crisis trough to three years later.
 
 **Implementation Rationale**  
-Standard recovery metrics often stop at “time to pre‑crisis level,” missing acceleration. This measure normalizes recovery speed, enabling direct comparison across countries and crisis episodes. It answers: *Do policies like liquidity support lead to faster rebounds?*
+> Standard recovery metrics often stop at “time to pre‑crisis level,” missing acceleration. This measure normalizes recovery speed, enabling direct comparison across countries and crisis episodes. It answers: *Do policies like liquidity support lead to faster rebounds?*
 
 **DAX Formula**
 ```ruby
@@ -51,7 +51,7 @@ RETURN
 Computes the annual percentage change in total trade value, with robust error handling to avoid misleading results when data is missing or previous‑year values are zero.
 
 **Implementation Rationale**
-Raw growth formulas break when denominators are zero or blank. This version returns a blank instead of an error or infinity, and ensures the dashboard remains clean and reliable.
+> Raw growth formulas break when denominators are zero or blank. This version returns a blank instead of an error or infinity, and ensures the dashboard remains clean and reliable.
 
 **DAX Formula**
 
@@ -88,7 +88,7 @@ RETURN Result
 Captures the absolute drop in average export growth during systemic banking crises compared to normal periods.
 
 **Implementation Rationale**
-This single measure answers the core business question: “How much does export growth typically drop during a banking crisis?” It serves as the foundation for deeper segmentation—by industry, country group, or policy intervention.
+> This single measure answers the core business question: “How much does export growth typically drop during a banking crisis?” It serves as the foundation for deeper segmentation—by industry, country group, or policy intervention.
 
 **DAX Formula**
 
@@ -120,7 +120,7 @@ Crisis Impact = [Avg Export Growth Crisis] - [Avg Export Growth Normal]
 A dynamic indicator that marks industries with financial dependence (RZ) above the global median, used in scatter plots and conditional formatting.
 
 **Implementation Rationale**
-Without this flag, users would have to manually set thresholds. By embedding the median comparison directly into DAX, we enable instant visual identification of high‑risk sectors.
+> Without this flag, users would have to manually set thresholds. By embedding the median comparison directly into DAX, we enable instant visual identification of high‑risk sectors.
 
 **DAX Formula**
 
