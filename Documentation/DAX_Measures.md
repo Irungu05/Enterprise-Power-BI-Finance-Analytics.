@@ -13,7 +13,7 @@ This document provides comprehensive documentation for all DAX measures develope
 
 ---
 
-## 📌 DAX Highlights
+## DAX Highlights
 
 ### “Recovery Velocity Index — measuring how fast trade bounces back”
 
@@ -43,7 +43,7 @@ RETURN
     DIVIDE(TradeAtRecovery - TradeAtTrough, TradeAtTrough, 0)
 ```
 > [!Caution]
->The TroughYear definition above uses a simplified assumption ```(crisis start year + 1)```. If you're using in a production environment, replace this with actual trough detection logic (e.g., identifying the year with minimum trade value within the crisis window) to ensure accurate recovery measurement.
+>The TroughYear definition above uses a simplified assumption ```(crisis start year + 1)```. If you're using in a production environment, please replace this with actual trough detection logic (e.g., identifying the year with minimum trade value within the crisis window) to ensure accurate recovery measurement.
 
 ### “YoY Export Growth — built to handle real‑world data quirks”
 
@@ -77,10 +77,10 @@ VAR Result =
 RETURN Result
 ```
 > [!Note]
-> This measure assumes ```Dim_Date[DateKey]``` is an integer column representing the year. If your date table uses a proper date column, adapt the measure using ```SAMEPERIODLASTYEAR``` instead.
+> This measure assumes ```Dim_Date[DateKey]``` is an integer column representing the year. If your date table uses a proper date column, please adapt the measure using ```SAMEPERIODLASTYEAR``` instead.
 
 > [!Tip]
-> Use this measure as a base for trend lines in reports. To avoid visual gaps, you can wrap the result in ```COALESCE``` with a default value, but be cautious—blanks are often preferable for indicating missing data.
+> Use this measure as a base for trend lines in reports. To avoid visual gaps, we recommend you wrap the result in ```COALESCE``` with a default value, but be cautious—blanks are often preferable for indicating missing data.
 
 ### “Crisis Impact on Export Growth — one number that tells the story”
 
@@ -112,7 +112,7 @@ Crisis Impact = [Avg Export Growth Crisis] - [Avg Export Growth Normal]
 > The Crisis Impact measure is subtraction measure that ensure that ```Avg Export Growth Normal``` and ```Avg Export Growth Crisis``` are computed on the same filtered context (e.g., same set of countries, industries). Otherwise, the difference may be misleading.
 
 > [!Tip]
-> For deeper analysis, create versions of these measures that accept slicers for policy intervention types or country development status.
+> For deeper analysis, please ensure you create versions of these measures that accept slicers for policy intervention types or country development status.
 
 ### “High Financial Dependence Flag — making vulnerability visible”
 
@@ -129,9 +129,9 @@ High RZ Flag = IF(SELECTEDVALUE(Fact_TradePerformance[RZ]) > MEDIAN(Fact_TradePe
 
 ```
 > [!Warning]
-> This measure uses SELECTEDVALUE, which returns a value only if a single industry is selected. If multiple industries are selected, it will return blank. Use this measure in visuals where the industry granularity is at the appropriate level (e.g., scatter plots with one point per industry).
+> This measure uses ```SELECTEDVALUE```, which returns a value only if a single industry is selected. If multiple industries are selected, it will return blank. Use this measure in visuals where your industry granularity is at the appropriate level (e.g., scatter plots with one point per industry).
 
-📊 KPIs
+### 📊 KPIs
 KPI	Definition	Formula Reference
 - Export Growth (Normal):	Avg annual export growth during years with no banking crisis	```Avg Export Growth Normal```
 - Export Growth (Crisis):	Avg annual export growth during years with a banking crisis	```Avg Export Growth Crisis```
@@ -141,7 +141,7 @@ KPI	Definition	Formula Reference
 - Policy Effectiveness Score:	Avg export growth during crisis when a specific policy was active	```Avg Export Growth w [Policy]```
 
 > [!Important]
-> Policy effectiveness scores should be interpreted cautiously—correlation does not imply causation. Other confounding factors (e.g., crisis severity, global economic conditions) may influence results.
+> Policy effectiveness scores should be interpreted cautiously—correlation does not imply causation. It is appropriate to note that other confounding factors (e.g., crisis severity, global economic conditions) may influence results.
 
 ## Justification for Advanced Measures
 ### Measure	Justification
@@ -176,10 +176,10 @@ Below is the full list of measures created for this project with screenshots of 
 | `High RZ Flag` | Dynamic flag: 1 if industry’s financial dependence (RZ) is above median, else 0 |
 
 > [!Note]
-> Measures 4–5 (Avg Loss High/Low RZ) rely on the loss column, which may contain estimated values. For robustness, consider using loss2 as an alternative where available.
+> Measures 4–5 (Avg Loss High/Low RZ) rely on the loss column, which may contain estimated values. For more sophisticated analysis, you can consider using loss2 as an alternative where available.
 
 > [!Warning]
-Measures using MEDIAN (e.g., Avg Loss High RZ, Export Decline High PcrDb) compute the median across all rows in the current filter context. If you want a fixed global median, consider storing the median value in a separate table or using CALCULATE with ALL to ignore filters.
+When considering measures using MEDIAN (e.g., Avg Loss High RZ, Export Decline High PcrDb) We recommend you compute the median across all rows in the current filter context. If you want a fixed global median, consider storing the median value in a separate table or using CALCULATE with ALL to ignore filters.
 
 > [!Note]
 > Tables: Fact_TradePerformance (fact), Dim_Date, Dim_Country, Dim_CrisisStatus (dimensions).
