@@ -1,8 +1,13 @@
-<img width="1586" height="855" alt="Screenshot 2026-03-10 232234" src="https://github.com/user-attachments/assets/fb428c17-7c9c-41c2-8a34-d99f5d815dda" />**DATA CLEANING**
+**DATA CLEANING**
 
 **Data Cleaning and Transformation**
 
 The dataset underwent a series of preprocessing steps in Power Query to ensure data quality, consistency, and suitability for business intelligence analysis. The following steps were performed.
+
+
+
+<img width="1586" height="855" alt="Screenshot 2026-03-10 232234" src="https://github.com/user-attachments/assets/fb428c17-7c9c-41c2-8a34-d99f5d815dda" />
+
 
 **Step 1: Data Type Correction**
 
