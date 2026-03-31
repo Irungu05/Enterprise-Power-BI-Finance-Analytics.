@@ -19,7 +19,9 @@ Columns were converted to appropriate data types to ensure correct calculations 
 Examples:
 
 year → Whole Number
+
 exporter → Text
+
 economic indicators such as tradevalue, expgrowth, and GDPcap → Decimal Number.
 
 Correct data types prevent calculation errors and improve performance during data modeling and DAX computations.
