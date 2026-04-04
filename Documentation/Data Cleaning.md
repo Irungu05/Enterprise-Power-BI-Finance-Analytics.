@@ -2,15 +2,15 @@
 
 **Data Cleaning and Transformation**
 
-The dataset underwent a series of preprocessing steps in Power Query to ensure data quality, consistency, and suitability for business intelligence analysis. The following steps were performed.
+The dataset underwent a series of preprocessing steps in Power Query to ensure data quality, consistency, and suitability for business intelligence analysis. I performed the following steps.
 
 
 **Step 1: Data Type Correction**
 
   
-Data types were standardized to ensure consistency across numerical and categorical variables.
+I standardized the Data types to ensure consistency across numerical and categorical variables.
 
-Columns were converted to appropriate data types to ensure correct calculations and analysis.
+Columns converted to appropriate data types to ensure correct calculations and analysis.
 
 Examples:
 
@@ -71,6 +71,17 @@ Conditional logic was applied to derive categorical indicators from numerical va
 
 **Step 6: Custom Column Creation**
 
+Created a custom column in Power Query to derive new analytical insights from existing variables using conditional logic. Specifically, the expgrowth variable was transformed into categorical groups representing different levels of export performance.
+
+The custom column, named Export_Growth_Category, classifies observations into:
+
+High Growth (expgrowth > 10)
+Moderate Growth (0 < expgrowth ≤ 10)
+Negative Growth (expgrowth ≤ 0)
+No Data (null values)
+
+This transformation enhances interpretability by converting continuous numerical data into meaningful categories, making it easier to analyze trends and build intuitive visualizations in Power BI dashboards.
+
 
 <img width="975" height="618" alt="image" src="https://github.com/user-attachments/assets/1754d862-e460-4c74-8a71-ad20d4979801" />
 
@@ -85,11 +96,13 @@ Separate dimension tables such as Dim_Country and Dim_CrisisStatus were created 
 
 **Step 8: Applied Steps**
 
+The applied steps shows all the steps I carried doing the data cleaning process
+
 <img width="484" height="797" alt="image" src="https://github.com/user-attachments/assets/f12c74c4-2d2b-457b-9a00-f79865e6462e" />
 
 **Step 9: Final Dataset**
 
-
+This screenshot represents a section of Final Cleaned Dataset
 <img width="1586" height="855" alt="Screenshot 2026-03-10 232234" src="https://github.com/user-attachments/assets/fb428c17-7c9c-41c2-8a34-d99f5d815dda" />
 
 
