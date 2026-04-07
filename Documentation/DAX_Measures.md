@@ -51,7 +51,7 @@ RETURN
 ### “YoY Export Growth — built to handle real‑world data quirks”
 
 **Purpose**
-Computes the annual percentage change in total trade value, with robust error handling to avoid misleading results when data is missing or previous‑year values are zero.
+Computes the annual percentage change in total trade value
 
 **Implementation Rationale**
 > Raw growth formulas break when denominators are zero or blank. This version returns a blank instead of an error or infinity, and ensures the dashboard remains clean and reliable.
