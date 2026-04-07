@@ -3,7 +3,7 @@
 **Enterprise BI Project | World Bank Data Analysis**
 
 ## 1. Group Members 
-* **Angela Irungu** 
+* **Angela Irungu** : created repository,project proposal & Business report 
 * **Martin Kyaremateng**: Created 18 DAX measures.
 * **Queen Kibegi** : Data Cleaning
 * **Tumaini Micheni** 
