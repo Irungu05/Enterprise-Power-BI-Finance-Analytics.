@@ -63,4 +63,9 @@ The following measures provide the analytical logic for the dashboard and are do
 2.  **Credit Depth Buffers:** Developing nations should focus on increasing banking depth (**Private Credit/GDP**) to improve their **Systematic Resilience** score, which currently lags at **0.27**.
 3.  **Export Diversification:** Nations relying on top commodities (e.g., 3843) should diversify their export portfolios to mitigate the "Aggregated Risk" of sector-specific shocks.
 
+## **Data Source**
+Official Source: World Bank Data Catalog: Banking Crisis and Exports Dataset
+
+Dataset Content: This dataset contains 39,588 observations and 44 columns identifying global industry-level trade and systemic banking crisis indicators from 1980 to 2010.
+
 **Tools Used:** Power BI Desktop, Power Query, DAX, Microsoft Excel.
