@@ -87,12 +87,4 @@ Classifies the type and status of financial/banking crises for categorical analy
 
 ---
 
-## Tools Used
 
-- **Power BI Desktop** — Model view for relationship design
-- **Power Query (M)** — Pre-modeling data cleaning and type corrections
-- **DAX** — Calculated tables and measures built on top of this model
-
----
-
-*Part of the 6-Week Enterprise Power BI Finance Analytics Project.*
