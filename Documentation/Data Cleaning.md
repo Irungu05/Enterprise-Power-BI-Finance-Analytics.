@@ -1,4 +1,9 @@
-**DATA CLEANING**
+# 🌍 Global Export Resilience – Data Cleaning Documentation
+
+![Power BI](https://img.shields.io/badge/PowerBI-DAX-yellow?logo=powerbi)
+![Data Analytics](https://img.shields.io/badge/Data-Analytics-blue)
+![Status](https://img.shields.io/badge/Project-Active-success)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 **Data Cleaning and Transformation**
 
