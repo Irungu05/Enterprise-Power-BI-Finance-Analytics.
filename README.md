@@ -3,11 +3,11 @@
 **Enterprise BI Project | World Bank Data Analysis**
 
 ## 1. Group Members 
-* **Angela Irungu** : created repository,project proposal & Business report 
-* **Martin Kyaremateng**: Created 18 DAX measures.
+* **Angela Irungu** : Created repository, Project Proposal & Business Report 
+* **Martin Kyaremateng**: Created 18 DAX measures
 * **Queen Kibegi** : Data Cleaning
 * **Tumaini Micheni**: Data Modeling
-* **Leona Kamau**
+* **Leona Kamau**: Dashboard Architecture & Design
 * **Lesala Monaheng**
 
 ## **1. Project Overview**
@@ -51,7 +51,7 @@ The following measures provide the analytical logic for the dashboard and are do
 * **Total Countries in Recession:** `DISTINCTCOUNT(Fact_TradePerformance[exporter])` (Filtered where `recession = 1`).
 * **Sectoral Impact Growth:** `AVERAGE(Fact_TradePerformance[expgrowthTRIM])` (Grouped by RZ Category).
 
-## **7. Dashboard Architecture & Navigation**
+## **7. Dashboard Architecture & Design**
 The solution is designed as a professional-grade analytical suite with a focus on executive-level:
 
 * **Page 1: Executive Summary (Global Crisis Tracker)**
