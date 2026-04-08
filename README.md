@@ -51,14 +51,30 @@ The following measures provide the analytical logic for the dashboard and are do
 * **Total Countries in Recession:** `DISTINCTCOUNT(Fact_TradePerformance[exporter])` (Filtered where `recession = 1`).
 * **Sectoral Impact Growth:** `AVERAGE(Fact_TradePerformance[expgrowthTRIM])` (Grouped by RZ Category).
 
-## **7. Key Insights & Findings**
+## **7. Dashboard Architecture & Navigation**
+The solution is designed as a professional-grade analytical suite with a focus on executive-level:
+
+* **Page 1: Executive Summary (Global Crisis Tracker)**
+    * **Function:** Geopolitical mapping of financial stability.
+    * **Key Visuals:** Interactive Map highlighting recession hotspots and KPI cards for Global Credit Depth.
+* **Page 2: Analytical Deep Dive (Sectoral Impact)**
+    * **Function:** Correlation between financial dependence (RZ) and export performance.
+    * **Key Visuals:** Scatter plot clusters analyzing high-RZ sectors against growth volatility.
+* **Page 3: Risk & Resilience Analysis (Risk Forecast)**
+    * **Function:** Identification of systemic vulnerabilities in trade commodities.
+    * **Key Visuals:** Sectoral Treemaps and custom Risk Index rankings.
+* **Page 4: Analytics & Data Explorer (Country-Specific)**
+    * **Function:** Granular historical auditing and raw data transparency.
+    * **Key Visuals:** Time-series charts comparing Private Credit vs. Growth trends and a detailed Data Table.
+
+## **8. Key Insights & Findings**
 * **Global Status:** 23 countries were identified in a recessionary state during the study period.
 * **Growth Disparity:** While the **Expected Growth** is **3.41**, the actual **Recovery Velocity** for crisis-impacted sectors is significantly lower at **0.27**.
 * **Credit Depth vs. Risk:** The **USA** maintains the highest private credit depth (**5.8K**), supporting high trade volumes but resulting in a total **Risk Index of 1.82**.
 * **Commodity Contribution:** Product codes **3843** ($5.43bn) and **3832** ($5.33bn) are the primary drivers of trade value.
 * **Vulnerability:** Scatter plot analysis confirms that high-RZ sectors (financially dependent) cluster in low-growth zones during financial disruptions.
 
-## **8. Strategic Recommendations**
+## **9. Strategic Recommendations**
 1.  **Targeted Policy:** Governments should prioritize **Liquidity Support (liqsup)** for high-RZ sectors, as they demonstrate the most immediate decline during credit crunches.
 2.  **Credit Depth Buffers:** Developing nations should focus on increasing banking depth (**Private Credit/GDP**) to improve their **Systematic Resilience** score, which currently lags at **0.27**.
 3.  **Export Diversification:** Nations relying on top commodities (e.g., 3843) should diversify their export portfolios to mitigate the "Aggregated Risk" of sector-specific shocks.
