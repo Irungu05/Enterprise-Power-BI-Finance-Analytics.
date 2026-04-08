@@ -19,7 +19,7 @@
 > * **Lesala Monaheng**
 
 > [!Note]
-> Each group member’s contributions are tracked in the repository’s commit history. For questions about specific deliverables, refer to the respective team lead.
+> Each group member’s contributions are tracked in the repository’s commit history with respective deliverables in files in the documentation.
 
 ## **1. Project Overview**
 > This project investigates the intersection of international trade and macro-financial stability. By leveraging global industry-level trade data and banking crisis indicators, the project visualizes how financial shocks disrupt trade flows. The primary objective is to build a complete end-to-end BI solution that identifies vulnerable sectors during financial crises and evaluates whether government policy responses effectively stabilize the situation.
