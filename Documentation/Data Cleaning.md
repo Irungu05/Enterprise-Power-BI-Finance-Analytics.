@@ -39,13 +39,13 @@ Correct data types prevent calculation errors and improve performance during dat
 **Step 2: Handling Missing Values**
 
 Several economic indicators contained null values, which represent missing or unavailable data.
-Instead of replacing them with zeros, null values were retained because replacing them could misrepresent actual economic performance. In financial and macroeconomic datasets, null values often indicate that data was not reported rather than zero activity.
+Instead of replacing them with zeros, I retained the null values because replacing them could misrepresent actual economic performance. In financial and macroeconomic datasets, null values often indicate that data was not reported rather than zero activity.
 
 <img width="631" height="936" alt="image" src="https://github.com/user-attachments/assets/e0464581-6e06-4131-a93e-115b7d5aa7f6" />
 
 **Step 3: Duplicate Removal**
 
-Duplicate values were removed when creating dimension tables such as Dim_Country and Dim_CrisisStatus to ensure that each dimension contains unique records.
+Duplicate values removed when creating dimension tables such as Dim_Country and Dim_CrisisStatus to ensure that each dimension contains unique records.
 This step is critical in implementing a Star Schema, where dimension tables must have unique keys.
 
 <img width="975" height="652" alt="image" src="https://github.com/user-attachments/assets/8818940c-5eff-4cce-80d1-c187b8cf1fec" />
@@ -67,7 +67,7 @@ An append operation was demonstrated by combining selected queries vertically. T
 
 **Step 5: Conditional Column Creation**
 
-Conditional logic was applied to derive categorical indicators from numerical variables. For example, recession indicators were converted into descriptive categories to improve interpretability in dashboards and reports.
+I applied Conditional logic to derive categorical indicators from numerical variables. For example, recession indicators were converted into descriptive categories to improve interpretability in dashboards and reports.
 
 <img width="975" height="425" alt="image" src="https://github.com/user-attachments/assets/4d99a724-d012-4436-9975-5c22b59366c8" />
 
