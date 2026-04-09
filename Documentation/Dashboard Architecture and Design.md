@@ -26,6 +26,8 @@ Power BI Dashboard Link: https://app.fabric.microsoft.com/view?r=eyJrIjoiNmFjODF
 
 **User Interactivity**: A Development Status Slicer allows users to filter the entire map between Developed and Developing nations to compare resilience.
 
+**Screenshot**: <img width="880" height="496" alt="Page 1_ Global Crisis Tracker" src="https://github.com/user-attachments/assets/58c36345-4d11-4ae8-8a21-a7a9a0bd7056" />
+
 ## **Page 2: Sectoral Impact & Financial Dependence**
 **Objective**: To investigate the "RZ Index" (External Financial Dependence) and its effect on industry growth.
 
@@ -39,6 +41,8 @@ Power BI Dashboard Link: https://app.fabric.microsoft.com/view?r=eyJrIjoiNmFjODF
 
 **User Interactivity**: A Trade Category Sidebar enables users to isolate specific product groups (e.g., Durable vs. Non-Durable) to see varying levels of credit sensitivity.
 
+**Screenshot**: 
+
 ## **Page 3: Risk Exposure & Resilience Forecast**
 **Objective**: To rank country-level risk and identify high-value commodities at stake.
 
@@ -51,7 +55,7 @@ Power BI Dashboard Link: https://app.fabric.microsoft.com/view?r=eyJrIjoiNmFjODF
 
 **User Interactivity**: Uses a Systematic Resilience metric (0.27) to provide a comparative benchmark against Expected Growth (3.41).
 
-## * **Page 4: Analytics & Data Explorer**
+## **Page 4: Analytics & Data Explorer**
 **Objective**: To provide a granular audit trail and "Stress-Testing" capabilities.
 
 **Core Visuals**:
@@ -61,3 +65,4 @@ Power BI Dashboard Link: https://app.fabric.microsoft.com/view?r=eyJrIjoiNmFjODF
 2. **Audit Table**: A row-by-row view of the 39,500+ observations, including crisis flags (BANK, TWIN) and policy responses (liqsup).
 
 **User Interactivity**: This page hosts the What-if Parameter (Growth Stress Rate). Moving the slider updates the Stress-Adjusted Risk measure, allowing for real-time scenario modeling of economic shocks.
+
