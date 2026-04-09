@@ -41,7 +41,7 @@ Power BI Dashboard Link: https://app.fabric.microsoft.com/view?r=eyJrIjoiNmFjODF
 
 **User Interactivity**: A Trade Category Sidebar enables users to isolate specific product groups (e.g., Durable vs. Non-Durable) to see varying levels of credit sensitivity.
 
-<img width="880" height="496" alt="Page 2_ Sectoral Impact" src="https://github.com/user-attachments/assets/3c9056b7-c7b7-4314-b6c6-4ed36cdcc302" />
+<img width="702" height="373" alt="Page 2_Sectoral Impact" src="https://github.com/user-attachments/assets/edbdf37d-7b47-490f-91ba-4efd00933308" />
 
 ## **Page 3: Risk Exposure & Resilience Forecast**
 **Objective**: To rank country-level risk and identify high-value commodities at stake.
@@ -55,7 +55,7 @@ Power BI Dashboard Link: https://app.fabric.microsoft.com/view?r=eyJrIjoiNmFjODF
 
 **User Interactivity**: Uses a Systematic Resilience metric (0.27) to provide a comparative benchmark against Expected Growth (3.41).
 
-<img width="880" height="496" alt="Page 3_Risk Exposure" src="https://github.com/user-attachments/assets/5f99d1bd-6c52-4080-92e9-a82679666882" />
+<img width="702" height="373" alt="Page 3_Risk Exposure" src="https://github.com/user-attachments/assets/1db9a9bf-a323-4203-86ef-79f0ff1e19c8" />
 
 ## **Page 4: Analytics & Data Explorer**
 **Objective**: To provide a granular audit trail and "Stress-Testing" capabilities.
