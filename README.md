@@ -8,6 +8,7 @@
 # Enterprise-Power-BI-Finance-Analytics.
 # Banking Crisis and Global Export Resilience
 **Enterprise BI Project | World Bank Data Analysis**
+**Power BI Dashboard Link**: https://app.fabric.microsoft.com/view?r=eyJrIjoiNmFjODFlOWItYmQyNS00MGFkLWFjMGEtZTQxMjZjZGEyODJkIiwidCI6IjE2ZDgzZWU2LTI1NGEtNDY5ZC1hNmNjLTU0ZTJjYTIzMTNlNyIsImMiOjh9
 
 
 ## 1. Group Members 
@@ -85,7 +86,7 @@ The following measures provide the analytical logic for the dashboard and are do
 > The static benchmark `Expected Growth = 3.41` is derived from non‑crisis periods in the dataset (1980‑2010). Do not use this value for comparisons with data outside the original time frame without recalibration.
 
 ## 7. Dashboard Architecture & Design
-*The solution is designed as a professional-grade analytical suite with a focus on executive-level:*
+* The solution is designed as a professional-grade analytical suite with a focus on executive-level:*
 ```ruby
  (a) Page 1: Executive Summary (Global Crisis Tracker)
     Function: Geopolitical mapping of financial stability.
