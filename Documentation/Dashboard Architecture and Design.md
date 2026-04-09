@@ -26,7 +26,8 @@ Power BI Dashboard Link: https://app.fabric.microsoft.com/view?r=eyJrIjoiNmFjODF
 
 **User Interactivity**: A Development Status Slicer allows users to filter the entire map between Developed and Developing nations to compare resilience.
 
-**Screenshot**: <img width="880" height="496" alt="Page 1_ Global Crisis Tracker" src="https://github.com/user-attachments/assets/58c36345-4d11-4ae8-8a21-a7a9a0bd7056" />
+**Screenshot**
+<img width="880" height="496" alt="Page 1_ Global Crisis Tracker" src="https://github.com/user-attachments/assets/58c36345-4d11-4ae8-8a21-a7a9a0bd7056" />
 
 ## **Page 2: Sectoral Impact & Financial Dependence**
 **Objective**: To investigate the "RZ Index" (External Financial Dependence) and its effect on industry growth.
