@@ -68,4 +68,4 @@ Power BI Dashboard Link: https://app.fabric.microsoft.com/view?r=eyJrIjoiNmFjODF
 
 **User Interactivity**: This page hosts the What-if Parameter (Growth Stress Rate). Moving the slider updates the Stress-Adjusted Risk measure, allowing for real-time scenario modeling of economic shocks.
 
-<img width="880" height="496" alt="Page 4_Analytics and Data Explorer" src="https://github.com/user-attachments/assets/bc3c67c1-57a1-4fbd-a046-040d4ebb21b6" />
+<img width="702" height="496" alt="Page 4_Analytics and Data Explorer" src="https://github.com/user-attachments/assets/bc3c67c1-57a1-4fbd-a046-040d4ebb21b6" />
