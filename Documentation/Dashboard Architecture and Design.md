@@ -26,7 +26,6 @@ Power BI Dashboard Link: https://app.fabric.microsoft.com/view?r=eyJrIjoiNmFjODF
 
 **User Interactivity**: A Development Status Slicer allows users to filter the entire map between Developed and Developing nations to compare resilience.
 
-**Screenshot**
 <img width="880" height="496" alt="Page 1_ Global Crisis Tracker" src="https://github.com/user-attachments/assets/58c36345-4d11-4ae8-8a21-a7a9a0bd7056" />
 
 ## **Page 2: Sectoral Impact & Financial Dependence**
@@ -42,7 +41,7 @@ Power BI Dashboard Link: https://app.fabric.microsoft.com/view?r=eyJrIjoiNmFjODF
 
 **User Interactivity**: A Trade Category Sidebar enables users to isolate specific product groups (e.g., Durable vs. Non-Durable) to see varying levels of credit sensitivity.
 
-**Screenshot**: 
+<img width="880" height="496" alt="Page 1_ Global Crisis Tracker" src="https://github.com/user-attachments/assets/3c9056b7-c7b7-4314-b6c6-4ed36cdcc302" />
 
 ## **Page 3: Risk Exposure & Resilience Forecast**
 **Objective**: To rank country-level risk and identify high-value commodities at stake.
@@ -56,6 +55,8 @@ Power BI Dashboard Link: https://app.fabric.microsoft.com/view?r=eyJrIjoiNmFjODF
 
 **User Interactivity**: Uses a Systematic Resilience metric (0.27) to provide a comparative benchmark against Expected Growth (3.41).
 
+<img width="658" height="368" alt="Page 3_Risk Exposure" src="https://github.com/user-attachments/assets/5f99d1bd-6c52-4080-92e9-a82679666882" />
+
 ## **Page 4: Analytics & Data Explorer**
 **Objective**: To provide a granular audit trail and "Stress-Testing" capabilities.
 
@@ -67,3 +68,4 @@ Power BI Dashboard Link: https://app.fabric.microsoft.com/view?r=eyJrIjoiNmFjODF
 
 **User Interactivity**: This page hosts the What-if Parameter (Growth Stress Rate). Moving the slider updates the Stress-Adjusted Risk measure, allowing for real-time scenario modeling of economic shocks.
 
+<img width="654" height="370" alt="Page 4_Analytics and Data Explorer" src="https://github.com/user-attachments/assets/bc3c67c1-57a1-4fbd-a046-040d4ebb21b6" />
