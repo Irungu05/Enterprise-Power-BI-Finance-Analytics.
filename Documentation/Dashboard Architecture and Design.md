@@ -8,7 +8,8 @@ Power BI Dashboard Link: https://app.fabric.microsoft.com/view?r=eyJrIjoiNmFjODF
 ## Objective
 * To addresses the core research questions regarding banking crises and global export resilience.
 
-## Key Sections:
+## Key Sections
+
 * **Page 1: Global Crisis Tracker**
 * **Page 2: Sectoral Impact & Financial Dependence**
 * **Page 3: Risk Exposure & Resilience Forecast**
