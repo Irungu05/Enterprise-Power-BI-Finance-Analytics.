@@ -12,10 +12,10 @@
 * **Page 3: Risk Exposure & Resilience Forecast**
 * **Page 4: Analytics & Data Explorer**
 
-### **Page 1: Global Crisis Tracker**
-* Objective: To establish the global economic context and identify systemic credit risks.
+## **Page 1: Global Crisis Tracker**
+**Objective**: To establish the global economic context and identify systemic credit risks.
 
-Core Visuals:
+**Core Visuals**:
 
 1. **Geospatial Bubble Map**: Displays Private Credit by Country. Larger bubbles (e.g., USA at 5.8K and JPN at 3.2K) highlight nations with high credit depth, which acts as a buffer or a risk amplifier during crises.
 
@@ -24,3 +24,18 @@ Core Visuals:
 **User Interactivity**: A Development Status Slicer allows users to filter the entire map between Developed and Developing nations to compare resilience.
 
 **Research Question Alignment**: Provides the data foundation for Q1 (Growth drops) and Q5 (Developed vs. Developing disparity).
+
+## **Page 2: Sectoral Impact & Financial Dependence**
+**Objective**: To investigate the "RZ Index" (External Financial Dependence) and its effect on industry growth.
+
+**Core Visuals**:
+
+1. **Scatter Plot (Financial Dependence vs. Growth)**: Plots industry sectors by their Average RZ.
+   * It identifies "Vulnerability Clusters"—sectors that rely heavily on credit and thus suffer more during banking freezes.
+
+2. **Recovery Velocity Gauge**: Shows a real-time recovery score of 0.27.
+   * This visualizes the lag between actual performance and the stable-period expectation.
+
+**User Interactivity**: A Trade Category Sidebar enables users to isolate specific product groups (e.g., Durable vs. Non-Durable) to see varying levels of credit sensitivity.
+
+**Research Question Alignment**: Directly addresses Q2 (Financial dependence impact).
