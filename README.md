@@ -18,7 +18,7 @@
 > * **Queen Kibegi** : *Data Cleaning*
 > * **Tumaini Micheni**: *Data Modeling*
 > * **Leona Kamau**: *Dashboard Architecture & Design*
-> * **Lesala Monaheng**
+> * **Lesala Monaheng** Documentation
 
 > [!Note]
 > Each group member’s contributions are tracked in the repository’s commit history with respective deliverables in files in the documentation.
