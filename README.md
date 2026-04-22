@@ -47,7 +47,7 @@
 > Use the dashboard’s **What‑If Parameter** for credit market fluctuations to simulate answers to Q4 under different banking depth scenarios.
 
 ## **4. Data Dictionary**
-```ruby
+```
 The dataset comprises 44 columns and over 39,500 observations sourced from the World Bank.
 * Performance Metrics: `tradevalue` (Export Value), `expgrowth` (Growth Rate), `tradeshare` (Export Share), `GDPgr` (Domestic GDP Growth).
 * Crisis Indicators: `BANK` (Banking Crisis), `TWIN` (Twin Crisis), `recession` (Domestic Recession), `Recession Abroad`.
